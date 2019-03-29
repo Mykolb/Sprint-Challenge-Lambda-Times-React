@@ -33,3 +33,5 @@ Tab.propTypes = {
 
 
 export default Tab;
+
+//If tab equal to isActive, meaning tab = selected tab, then className will equal active tab. If it's not true then className equals tab.
