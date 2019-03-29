@@ -26,9 +26,9 @@ const Tab = props => {
 Tab.propTypes = {
   Tab: PropTypes.shape({
   selectTabHandler: PropTypes.symbol.isRequired,
-  tab: PropTypes.array.isRequired
+  tab: PropTypes.array.isRequired,
+  selectedTab: PropTypes.array.isRequired
 })
-
 }
 
 
