@@ -12,25 +12,29 @@ class LogIn extends Component {
         }
     }
 
+
+
 handleInputChange = event => {
-    this.setState({ [event.target.name]: event.target.value})
+this.setState({ [event.target.name]: event.target.value})
 }
+
+
 
 handleLogInSubmit = event => {
     const user = this.state.username;
-    localStorahe.setItem('user', user)
-    window.location.reload();
+    localStorage.setItem('user', user)
+    window.location.reload()
 }
 
-}
+
 
 render() {
     return (
       <div className='form-container'>
-      <Form>
+      <Form onSubmit={e => e.preventDefault()}>
      <FormGroup>
         <Input 
-            type='text'
+        type='text'
         placeholder='Username'
         name='username'
         value={this.state.username}
@@ -47,10 +51,11 @@ render() {
         onChange={this.handleInputChange}
         />
      </FormGroup>
-     <Button>LogIn</Button>
+     <Button>Click here to Login</Button>
         </Form>
       </div> 
-    
-    )}     
+    );
+}  
+}
 
 export default LogIn;
