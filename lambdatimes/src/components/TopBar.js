@@ -60,6 +60,7 @@ const ContainerLeftH2 = styled.h2`
   cursor: pointer;
   margin-right: 25%;
   font-weight: bold;
+  font-size: 20px;
 `;
 
 const ContainerCenter = styled.div`
@@ -75,6 +76,7 @@ const ContainerCenterH2 = styled.h2`
   cursor: pointer;
   margin-right: 5%;
   font-weight: bold;
+  font-size: 20px;
 `;
 
 const ContainerRight = styled.div`

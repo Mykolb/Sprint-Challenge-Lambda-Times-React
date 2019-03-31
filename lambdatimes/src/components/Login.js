@@ -31,7 +31,7 @@ handleLogInSubmit = event => {
 render() {
     return (
       <div className='form-container'>
-      <Form onSubmit={e => e.preventDefault()}>
+      <Form onSubmit={this.handleLogInSubmit} >
      <FormGroup>
         <Input 
         type='text'
