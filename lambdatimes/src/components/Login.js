@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTyes from 'prop-types';
 import {Button, Form, FormGroup, Input} from 'reactstrap';
-
+import './LogIn.css';
 
 class LogIn extends Component {
     constructor(props) {
@@ -26,13 +26,18 @@ handleLogInSubmit = event => {
     window.location.reload()
 }
 
+handleLogOutSubmit = event => {
+    const user = this.state.username;
+    localStorage.removeItem('user', user)
+    window.location.reload()
+}
 
 
 render() {
     return (
       <div className='form-container'>
-      <Form onSubmit={this.handleLogInSubmit} >
-     <FormGroup>
+      <Form onSubmit={this.handleLogInSubmit}>
+     <FormGroup className='form'>
         <Input 
         type='text'
         placeholder='Username'
@@ -42,7 +47,7 @@ render() {
         />
      </FormGroup>
 
-     <FormGroup>
+     <FormGroup className='form'>
         <Input 
         type='password'
         placeholder='Top Secret Password Here'
@@ -51,7 +56,7 @@ render() {
         onChange={this.handleInputChange}
         />
      </FormGroup>
-     <Button>Click here to Login</Button>
+     <Button className='login-btn' size='large' >Click here to Login</Button>
         </Form>
       </div> 
     );
