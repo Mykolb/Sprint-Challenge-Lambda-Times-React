@@ -37,6 +37,7 @@ render() {
     return (
       <div className='form-container'>
       <Form onSubmit={this.handleLogInSubmit}>
+      <h1>Lambda Times LogIn</h1>
      <FormGroup className='form'>
         <Input 
         type='text'
