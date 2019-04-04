@@ -6,11 +6,14 @@ PropTypes are used to check your data to ensure you are passing the correct data
 
 Handful of methods that let us tap into lifecycle.
 
-- [ ] Explain the details of a Higher Order Component?
-
 Mounting/Birth: constructor called & state started
 Growth/Updating: props received/content rendered to the screen
 Unmounting/Death: component is removed from the screen
+
+
+- [ ] Explain the details of a Higher Order Component?
+
+
 
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
  

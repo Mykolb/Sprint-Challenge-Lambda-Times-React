@@ -1,0 +1,29 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+
+
+.form {
+    box-shadow: 10px 10px 10px gray;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.login-btn {
+    margin-left: 30%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.login-btn:hover {
+    border: 1px double whitesmoke;
+    color: white;
+    background-color: navy;
+}

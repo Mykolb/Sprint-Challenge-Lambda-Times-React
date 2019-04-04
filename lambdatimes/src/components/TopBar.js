@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 // Refactor this component to use styled components and not classNames. 
 // You can find the corresponding CSS in the CSS/index.css file
 
@@ -15,7 +16,7 @@ const TopBar = () => {
           <ContainerCenterH2>GENERAL</ContainerCenterH2><ContainerCenterH2>BROWNBAG</ContainerCenterH2><ContainerCenterH2>RANDOM</ContainerCenterH2><ContainerCenterH2>MUSIC</ContainerCenterH2><ContainerCenterH2>ANNOUNCEMENTS</ContainerCenterH2>
         </ContainerCenter>
         <ContainerRight>
-          <ContainerRightH2>LOG IN</ContainerRightH2>
+          <Button>LOG IN</Button>
         </ContainerRight>
       </Container>
     </TopBar1>
@@ -60,6 +61,7 @@ const ContainerLeftH2 = styled.h2`
   cursor: pointer;
   margin-right: 25%;
   font-weight: bold;
+  font-size: 20px;
 `;
 
 const ContainerCenter = styled.div`
@@ -75,6 +77,7 @@ const ContainerCenterH2 = styled.h2`
   cursor: pointer;
   margin-right: 5%;
   font-weight: bold;
+  font-size: 20px;
 `;
 
 const ContainerRight = styled.div`
@@ -87,6 +90,9 @@ const ContainerRight = styled.div`
   font-weight: bold;
 `;
 
-const ContainerRightH2 = styled.h2`
+const Button = styled.button`
 cursor: pointer;
+font-size: 20px;
+background-color: black;
+color: white;
 `;
